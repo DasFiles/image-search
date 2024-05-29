@@ -1,0 +1,8 @@
+Flask
+requests
+beautifulsoup4
+lxml
+re
+json
+urljoin
+Gunicorn
