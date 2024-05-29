@@ -37,7 +37,7 @@ def check_query(query):
 
 @app.route('/')
 def index():
-    check_host()
+    # check_host()
     return render_template('index.html')
 
 @app.route('/search')
