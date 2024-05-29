@@ -4,7 +4,7 @@ from picport import picport
 app = Flask(__name__)
 picport = picport()
 
-ALLOWED_HOSTS = ['mwfbiz.com', 'mastrowall.in', 'amrit-corp.com','render.com']
+ALLOWED_HOSTS = ['mwfbiz.com', 'mastrowall.in', 'amrit-corp.com']
 DISALLOWED_WORDS = [
     'adult', 'xxx', 'sex', 'nude', 'fuck', 'porn', 'porno', 'pornography',
     'sexual', 'erotic', 'naked', 'nudes', 'fucking', 'blowjob', 'handjob', 'anal',
@@ -42,7 +42,7 @@ def index():
 
 @app.route('/search')
 def search():
-    check_host()
+    # check_host()
     query = request.args.get('query', 'hd wallpaper')
     if not check_query(query):
         error_message = "🚫 The search query contains disallowed words or phrases. 🚫"
