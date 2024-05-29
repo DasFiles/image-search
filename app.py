@@ -4,7 +4,7 @@ from picport import picport
 app = Flask(__name__)
 picport = picport()
 
-ALLOWED_HOSTS = ['mwfbiz.com', 'mastrowall.in', 'amrit-corp.com']
+ALLOWED_HOSTS = ['mwfbiz.com', 'mastrowall.in', 'amrit-corp.com','onrender.com']
 DISALLOWED_WORDS = [
     'adult', 'xxx', 'sex', 'nude', 'fuck', 'porn', 'porno', 'pornography',
     'sexual', 'erotic', 'naked', 'nudes', 'fucking', 'blowjob', 'handjob', 'anal',
